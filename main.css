@@ -46,6 +46,11 @@
   /* ================ BEFORE CONTENT STATEMENT ================ */
 
   .h3-statement::before {
-    content: "&quot;";
-
+    content: open-quote;
+    font-family: system-ui;
+    color: #FFD4CA;
+    font-size: 7rem;
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
 }
