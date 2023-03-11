@@ -1,13 +1,8 @@
 /* Hello there it's me */
 
 
-
+/* ================ BACKGROUND NOISE ANIMATION ================ */
 .noisy-bg {
-    /* position:absolute;
-    left:0;
-    top:0;
-    width:100vw;
-    height:100vh; */
     animation: noiseAnimation .2s infinite;
   }
   
@@ -46,3 +41,11 @@
         background-position:5% 0
     }
   }
+
+
+  /* ================ BEFORE CONTENT STATEMENT ================ */
+
+  .h3-statement::before {
+    content: "&quot;";
+
+}
