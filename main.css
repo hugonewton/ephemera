@@ -115,3 +115,13 @@ a {
    cursor: pointer;
 }
 }
+
+
+
+@media screen and (max-width: 767px) {
+    .section-insta,
+    .section-insta-container {
+        overflow: unset;
+    }
+
+}
