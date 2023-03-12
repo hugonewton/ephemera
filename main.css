@@ -60,3 +60,10 @@
         font-size: 5rem;
     }
 }
+
+/* ================ CURSOR POINTER EVENTS ================ */
+
+
+.cursor-wrapper {
+    pointer-events: none;
+}
