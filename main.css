@@ -54,3 +54,9 @@
     left: -1rem;
     top: -1rem;
 }
+
+@media(min-width: 1000px) {
+    .h3-statement::before {
+        font-size: 5rem;
+    }
+}
