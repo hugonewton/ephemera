@@ -125,3 +125,14 @@ a {
     }
 
 }
+
+
+/* STYLES FOR NAV MENU */
+
+a {
+	color: inherit;
+}
+
+.link-top, .link-bottom {
+	pointer-events: none;
+}
