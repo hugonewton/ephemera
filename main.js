@@ -18,7 +18,7 @@ playerContainers.forEach(container => {
 
 // MENU NAV LINKS
 
-$('.link').on('mouseenter mouseleave', function() {
+$('.link-container-nav').on('mouseenter mouseleave', function() {
   $(this).find('.fill').toggleClass('expand');
   $(this).find('.marquee').toggleClass('visible');
 });
