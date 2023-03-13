@@ -133,6 +133,6 @@ a {
 	color: inherit;
 }
 
-/* .link-top, .link-bottom {
+.link-top, .link-bottom {
 	pointer-events: none;
-} */
+}
