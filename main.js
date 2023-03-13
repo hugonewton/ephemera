@@ -14,3 +14,21 @@ playerContainers.forEach(container => {
     player.play();
   });
 });
+
+
+// MENU NAV LINKS
+
+$('.link').on('mouseenter mouseleave', function() {
+  $(this).find('.fill').toggleClass('expand');
+  $(this).find('.marquee').toggleClass('visible');
+});
+
+$('.link-top').on('mouseleave', function() {
+    $(this).closest('.link').removeClass('bottom');
+    $(this).closest('.link').find('.marquee').removeClass('bottom');
+});
+
+$('.link-bottom').on('mouseleave', function() { 
+    $(this).closest('.link').addClass('bottom');
+    $(this).closest('.link').find('.marquee').addClass('bottom');
+});
