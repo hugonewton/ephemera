@@ -24,11 +24,11 @@ $('.link-container-nav').on('mouseenter mouseleave', function() {
 });
 
 $('.link-top').on('mouseleave', function() {
-    $(this).closest('.link').removeClass('bottom');
-    $(this).closest('.link').find('.marquee').removeClass('bottom');
+    $(this).closest('.link-container-nav').removeClass('bottom');
+    $(this).closest('.link-container-nav').find('.marquee').removeClass('bottom');
 });
 
 $('.link-bottom').on('mouseleave', function() { 
-    $(this).closest('.link').addClass('bottom');
-    $(this).closest('.link').find('.marquee').addClass('bottom');
+    $(this).closest('.link-container-nav').addClass('bottom');
+    $(this).closest('.link-container-nav').find('.marquee').addClass('bottom');
 });
