@@ -142,3 +142,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     color: #000;
     border: 1px solid #000;
 }
+
+.radio-field-wrapper .w-form-label {
+    cursor: none;
+}
