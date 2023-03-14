@@ -138,5 +138,7 @@ a {
 } */
 
 label.radio-field-wrapper:has(.w--redirected-checked) {
-    background: red;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
