@@ -136,3 +136,7 @@ a {
 /* .link-top, .link-bottom {
 	pointer-events: none;
 } */
+
+label.radio-field-wrapper:has(.w--redirected-checked) {
+    background: red;
+}
