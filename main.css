@@ -146,3 +146,14 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 .radio-field-wrapper .w-form-label {
     cursor: none;
 }
+
+
+/* ================ DISABLE CURSOR ON IPAD PRO ================ */
+
+.restaurant-item:nth-of-type(1) .main-cta {
+    background: #C56648;
+}
+
+a[target="_blank"] {
+  background-color: yellow;
+}
