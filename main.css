@@ -165,3 +165,8 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 .restaurant-item:nth-of-type(3) .main-cta:hover {
     background: inherit;
 }
+
+
+.logo-restaurant-listing-item {
+    pointer-events: none;
+}
