@@ -166,7 +166,15 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     background: inherit;
 }
 
+/* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
 
 .logo-restaurant-listing-item {
     pointer-events: none;
 }
+
+/* ================ HEIGHT OF RESTAURANT LISTING ================ */
+
+.section-restaurant-listing {
+    height: calc(100vh - 66px);
+}
+
