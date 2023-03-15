@@ -174,7 +174,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 
 /* ================ HEIGHT OF RESTAURANT LISTING ================ */
 
-.section-restaurant-listing {
+/* .section-restaurant-listing {
     height: calc(100vh - 66px);
-}
+} */
 
