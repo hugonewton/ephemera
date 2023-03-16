@@ -163,7 +163,8 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 .restaurant-item:nth-of-type(1) .main-cta:hover, 
 .restaurant-item:nth-of-type(2) .main-cta:hover, 
 .restaurant-item:nth-of-type(3) .main-cta:hover {
-    background: inherit;
+    background: #fff;
+    color: #000;
 }
 
 /* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
