@@ -179,3 +179,8 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     height: calc(100vh - 66px);
 } */
 
+/* ================ DO NOT DISPLAY SEVEN ROOMS LOGO ================ */
+.sr-fa.sr-fa-logo {
+    display: none;
+}
+
