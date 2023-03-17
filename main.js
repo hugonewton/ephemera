@@ -109,13 +109,13 @@ class TextScramble {
 // Example
 // ——————————————————————————————————————————————————
 
-const phrases = ['Nos restaurants,', 'Nos expériences', 'Nos aventures'];
+const phrases = ['Nos restaurants', 'Nos expériences', 'Nos aventures'];
 const el = document.querySelector('.h2-scramble-text');
 const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 800);
+    setTimeout(next, 1200);
   });
   counter = (counter + 1) % phrases.length;
 };

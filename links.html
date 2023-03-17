@@ -7,3 +7,18 @@
 
 
 <!-- cubic-bezier(0.290, 0.640, 0.305, 1.260) -->
+
+
+
+<!-- RESERVATION WIDGET-->
+<div id="sr-res-root" class="sr-sm sr-dark sr-#324654">Reservations</div>
+<script src="https://www.sevenrooms.com/widget/embed.js"></script>
+<script>
+SevenroomsWidget.init({
+    venueId: "ephemeraparis",
+    triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+    type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+    styleButton: true, // true if you are using the SevenRooms button
+    clientToken: "" //(Optional) Pass the api generated clientTokenId here
+})
+</script>
