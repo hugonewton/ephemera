@@ -184,3 +184,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     display: none;
 }
 
+
+.lottie-nav-item svg {
+    width: auto!important;
+}
