@@ -184,7 +184,12 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     display: none;
 }
 
-
+/* ================ EPHEMERA LOGO TO DISPLAY PROPERLY ON NAVBAR MOBILE ================ */
 .lottie-nav-item svg {
     width: auto!important;
+}
+
+/* ================ DVH ================ */
+.section-hero {
+    height: 100dvh;
 }
