@@ -190,6 +190,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 }
 
 /* ================ DVH ================ */
-.section-hero {
+.section-hero,
+.section-hero-restaurant-item-info-container {
     height: 100dvh;
 }
