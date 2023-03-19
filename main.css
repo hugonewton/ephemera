@@ -191,6 +191,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 
 /* ================ DVH ================ */
 .section-hero,
-.section-hero-restaurant-item-info-container {
+.section-hero-restaurant-item-info-container,
+.section-nav-menu {
     height: 100dvh;
 }
