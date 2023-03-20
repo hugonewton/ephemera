@@ -203,14 +203,15 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     list-style: none;
 }
 .event-p ul li {
-    position: relative;;
+    position: relative;
+    margin-bottom: .66em;
 }
 
 .event-p ul li::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 6px;
+        left: -2em;
+        top: 1px;
         width: 1em;
         height: 1em;
         background-repeat: no-repeat;
