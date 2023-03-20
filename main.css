@@ -202,6 +202,9 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
 .event-p ul {
     list-style: none;
 }
+.event-p ul li {
+    position: relative;;
+}
 
 .event-p ul li::before {
         content: '';
