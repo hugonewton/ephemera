@@ -145,7 +145,7 @@ label.radio-field-wrapper:has(.w--redirected-checked) {
     border: 1px solid #000;
 }
 
-label.radio-field-wrapper.blk:has(.w--redirected-checked) {
+label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checked) {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
