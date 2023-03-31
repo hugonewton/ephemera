@@ -245,3 +245,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 .privatisation-form .w-checkbox::before {
     display: none;
 }
+
+.main-cta:hover .p-cta {
+    color: inherit;
+}
