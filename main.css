@@ -137,10 +137,18 @@ a {
 	pointer-events: none;
 } */
 
+
+/* Radio for restaurant selection */
 label.radio-field-wrapper:has(.w--redirected-checked) {
     background: #fff;
     color: #000;
     border: 1px solid #000;
+}
+
+label.radio-field-wrapper.blk:has(.w--redirected-checked) {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .radio-field-wrapper .w-form-label {
