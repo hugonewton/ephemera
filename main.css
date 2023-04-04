@@ -198,8 +198,11 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 }
 
 /* ================ DVH ================ */
-.section-hero,
-.section-hero-restaurant-item-info-container,
+/* .section-hero,
+.section-hero-restaurant-item-info-container {
+    height: 100dvh;
+} */
+
 .section-nav-menu {
     height: 100dvh;
 }
