@@ -134,6 +134,7 @@ btn.addEventListener("click", calculateFunction);
 
 function calculateFunction() {
   console.log(typedValue);
+  console.log("2");
 };
 
 
