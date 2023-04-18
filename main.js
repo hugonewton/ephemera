@@ -127,10 +127,10 @@ next();
 // Budget Calculator
 // ——————————————————————————————————————————————————
 
-let typedValue = Number(document.getElementById("Budget").value);
+// let typedValue = Number(document.getElementById("Budget").value);
 
-const btn = document.getElementById("btn-calculate");
-btn.addEventListener("click", calculateFunction);
+const calculateBtn = document.getElementById("btn-calculate");
+calculateBtn.addEventListener("click", calculateFunction);
 
 function calculateFunction() {
   console.log(typedValue);
