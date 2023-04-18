@@ -29,7 +29,7 @@ let pricePerPerson= 110;
 let minimumPrice = 3000;
 
 function calculateFunction() {
-  let typedValue = Number(document.getElementById("Budget").value);
+  let typedValue = Number(document.getElementById("people-number").value);
   console.log(typedValue);
 
   let calculatedValue = typedValue * pricePerPerson;
