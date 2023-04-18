@@ -41,6 +41,8 @@ $('.link-bottom').on('mouseleave', function() {
 
 const calculateBtn = document.getElementById("btn-calculate");
 calculateBtn.addEventListener("click", calculateFunction);
+let displayValue = 0;
+let pricePerPerson= 110;
 
 function calculateFunction() {
   let typedValue = Number(document.getElementById("Budget").value);
