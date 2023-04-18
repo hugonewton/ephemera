@@ -133,8 +133,7 @@ const calculateBtn = document.getElementById("btn-calculate");
 calculateBtn.addEventListener("click", calculateFunction);
 
 function calculateFunction() {
-  console.log(typedValue);
-  console.log("2");
+  console.log("hello the button is working");
 };
 
 
