@@ -123,3 +123,10 @@ next();
 
 
 
+// ——————————————————————————————————————————————————
+// Budget Calculator
+// ——————————————————————————————————————————————————
+
+let typedValue = Number(document.getElementById("Budget").value);
+
+
