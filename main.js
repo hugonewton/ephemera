@@ -15,25 +15,6 @@ playerContainers.forEach(container => {
   });
 });
 
-
-// MENU NAV LINKS
-
-$('.link-container-nav').on('mouseenter mouseleave', function() {
-  $(this).find('.fill').toggleClass('expand');
-  $(this).find('.marquee').toggleClass('visible');
-});
-
-$('.link-top').on('mouseleave', function() {
-    $(this).closest('.link-container-nav').removeClass('bottom');
-    $(this).closest('.link-container-nav').find('.marquee').removeClass('bottom');
-});
-
-$('.link-bottom').on('mouseleave', function() { 
-    $(this).closest('.link-container-nav').addClass('bottom');
-    $(this).closest('.link-container-nav').find('.marquee').addClass('bottom');
-});
-
-
 // ——————————————————————————————————————————————————
 // Budget Calculator
 // ——————————————————————————————————————————————————
@@ -63,6 +44,27 @@ function calculateFunction() {
   priceContainer.textContent = displayValue + ",00€"
   
 };
+
+
+// MENU NAV LINKS
+
+$('.link-container-nav').on('mouseenter mouseleave', function() {
+  $(this).find('.fill').toggleClass('expand');
+  $(this).find('.marquee').toggleClass('visible');
+});
+
+$('.link-top').on('mouseleave', function() {
+    $(this).closest('.link-container-nav').removeClass('bottom');
+    $(this).closest('.link-container-nav').find('.marquee').removeClass('bottom');
+});
+
+$('.link-bottom').on('mouseleave', function() { 
+    $(this).closest('.link-container-nav').addClass('bottom');
+    $(this).closest('.link-container-nav').find('.marquee').addClass('bottom');
+});
+
+
+
 
 
 
