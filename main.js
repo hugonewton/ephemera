@@ -34,6 +34,19 @@ $('.link-bottom').on('mouseleave', function() {
 });
 
 
+// ——————————————————————————————————————————————————
+// Budget Calculator
+// ——————————————————————————————————————————————————
+
+// let typedValue = Number(document.getElementById("Budget").value);
+
+const calculateBtn = document.getElementById("btn-calculate");
+calculateBtn.addEventListener("click", calculateFunction);
+
+function calculateFunction() {
+  console.log("hello the button is working");
+};
+
 
 
 // ——————————————————————————————————————————————————
@@ -123,17 +136,5 @@ next();
 
 
 
-// ——————————————————————————————————————————————————
-// Budget Calculator
-// ——————————————————————————————————————————————————
-
-// let typedValue = Number(document.getElementById("Budget").value);
-
-const calculateBtn = document.getElementById("btn-calculate");
-calculateBtn.addEventListener("click", calculateFunction);
-
-function calculateFunction() {
-  console.log("hello the button is working");
-};
 
 
