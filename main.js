@@ -40,6 +40,8 @@ $('.link-bottom').on('mouseleave', function() {
 
 
 const calculateBtn = document.getElementById("btn-calculate");
+let priceContainer = document.getElementById("price-container");
+
 calculateBtn.addEventListener("click", calculateFunction);
 let displayValue = 0;
 let pricePerPerson= 110;
@@ -48,7 +50,7 @@ let minimumPrice = 3000;
 function calculateFunction() {
   let typedValue = Number(document.getElementById("Budget").value);
   console.log(typedValue);
-  
+
   let calculatedValue = typedValue * pricePerPerson;
 
   if (calculatedValue < minimumPrice) {
@@ -58,6 +60,7 @@ function calculateFunction() {
   }
 
   console.log(displayValue);
+  priceContainer.textContent = displayValue + ",00€"
   
 };
 
