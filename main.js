@@ -130,7 +130,7 @@ next();
 let typedValue = Number(document.getElementById("Budget").value);
 
 const btn = document.getElementById("btn-calculate")
-convertBtn.addEventListener("click", calculateFunction);
+btn.addEventListener("click", calculateFunction);
 
 function calculateFunction() {
   console.log(typedValue);
