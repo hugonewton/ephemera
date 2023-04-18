@@ -133,7 +133,7 @@ const btn = document.getElementById("btn-calculate")
 convertBtn.addEventListener("click", calculateFunction);
 
 function calculateFunction() {
-  
+  console.log(typedValue);
 };
 
 
