@@ -43,11 +43,22 @@ const calculateBtn = document.getElementById("btn-calculate");
 calculateBtn.addEventListener("click", calculateFunction);
 let displayValue = 0;
 let pricePerPerson= 110;
+let minimumPrice = 3000;
 
 function calculateFunction() {
   let typedValue = Number(document.getElementById("Budget").value);
   console.log(typedValue);
-  console.log("hello the button is working");
+  
+  let calculatedValue = typedValue * pricePerPerson;
+
+  if (calculatedValue < minimumPrice) {
+    displayValue = minimumPrice
+  } else {
+    displayValue = calculatedValue
+  }
+
+  console.log(displayValue);
+  
 };
 
 
