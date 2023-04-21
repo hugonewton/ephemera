@@ -252,3 +252,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 .main-cta:hover .p-cta {
     color: inherit;
 }
+
+.wg-selector-2-fill.f1 {
+    background-color: #ffd4ca!important;
+}
