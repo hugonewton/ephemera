@@ -10,7 +10,7 @@
 
 
 
-<!-- RESERVATION WIDGET-->
+<!-- RESERVATION WIDGET UTS-->
 <div id="sr-res-root" class="sr-sm sr-dark sr-#324654">Reservations</div>
 <script src="https://www.sevenrooms.com/widget/embed.js"></script>
 <script>
@@ -22,6 +22,70 @@ SevenroomsWidget.init({
     clientToken: "" //(Optional) Pass the api generated clientTokenId here
 })
 </script>
+
+<!-- FINAL FOR UTS -->
+<script>
+    SevenroomsWidget.init({
+        venueId: "ephemeraparis",
+        triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+        type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+        styleButton: false, // true if you are using the SevenRooms button
+        clientToken: "" //(Optional) Pass the api generated clientTokenId here
+    })
+ </script>
+
+<!-- UTS in RESA PAGE-->
+<div id="sr-res-root" class="main-cta beige-bg cursor-hover">Réserver</div>
+<script>
+SevenroomsWidget.init({
+    venueId: "ephemeraparis",
+    triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+    type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+    styleButton: true, // true if you are using the SevenRooms button
+    clientToken: "" //(Optional) Pass the api generated clientTokenId here
+})
+</script>
+
+
+<!-- RESERVATION WIDGET STELLAR-->
+<div id="sr-res-root" class="sr-sm sr-dark sr-#c56648">RESERVATIONS</div>
+<script src="https://www.sevenrooms.com/widget/embed.js"></script>
+<script>
+SevenroomsWidget.init({
+    venueId: "stellarrestaurant",
+    triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+    type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+    styleButton: true, // true if you are using the SevenRooms button
+    clientToken: "" //(Optional) Pass the api generated clientTokenId here
+})
+</script>
+
+
+<!-- FINAL FOR STELLAR -->
+<script>
+    SevenroomsWidget.init({
+        venueId: "stellarrestaurant",
+        triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+        type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+        styleButton: false, // true if you are using the SevenRooms button
+        clientToken: "" //(Optional) Pass the api generated clientTokenId here
+    })
+ </script>
+
+ <!-- STELLAR in RESA PAGE-->
+<div id="sr-res-root" class="main-cta beige-bg cursor-hover">Réserver</div>
+<script>
+SevenroomsWidget.init({
+    venueId: "stellarrestaurant",
+    triggerId: "sr-res-root", // id of the dom element that will trigger this widget
+    type: "reservations", // either 'reservations' or 'waitlist' or 'events'
+    styleButton: true, // true if you are using the SevenRooms button
+    clientToken: "" //(Optional) Pass the api generated clientTokenId here
+})
+</script>
+
+
+
 
 
 <!-- STELLAR -->
