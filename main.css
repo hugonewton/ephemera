@@ -265,3 +265,11 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
         display: none;
     }
 }}
+
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root .loading-lottie-container {
+
+    display: none;
+  
+  }
