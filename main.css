@@ -258,7 +258,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 }
 
 
-/* DO NOT DISPLAY LOADING SCREEN */
+/* DO NOT DISPLAY LOADING SCREEN ON SAFARI*/
 @media not all and (min-resolution:.001dpcm) { @media {
 
     .loading-lottie-container {
