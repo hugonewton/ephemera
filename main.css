@@ -270,6 +270,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 
 _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
 
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   
   }
