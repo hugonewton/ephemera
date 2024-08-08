@@ -308,4 +308,5 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
     left: 0;
     right: 0;
     background: #EEC2D1;
+    z-index: -1;
   }
