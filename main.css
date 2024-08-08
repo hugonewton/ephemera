@@ -278,7 +278,8 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
 
 
 
-  .personal-bg-video > video {
+  .personal-bg-video > video,
+  .menu-video-bg > video {
     object-fit: cover;
     z-index: -100;
     background-position: 50%;
@@ -291,4 +292,17 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
     bottom: -100%;
     left: -100%;
     right: -100%; 
+  }
+
+
+
+  .light-p.pink-underline {
+    position: relative;
+  }
+
+  .light-p.pink-underline:after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    bottom: -4px; 
   }
