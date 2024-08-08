@@ -298,6 +298,7 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
 
   .light-p.pink-underline {
     position: relative;
+    z-index: 1;
   }
 
   .light-p.pink-underline:after {
