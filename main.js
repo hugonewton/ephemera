@@ -67,6 +67,22 @@ function calculateFunction() {
 
 
 
+// ——————————————————————————————————————————————————
+// Budget Calculator
+// ——————————————————————————————————————————————————
+
+const copyBtn = document.querySelector('.adl_copy_btn');
+const copyMessage = document.querySelector('.adl_copied_message_wrap');
+
+copyBtn.addEventListener('click', () => {
+  copyMessage.classList.add('active');
+  setTimeout(() => {
+    copyMessage.classList.remove('active');
+}, 3000);
+});
+
+
+
 
 
 
