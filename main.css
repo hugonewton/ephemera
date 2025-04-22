@@ -41,10 +41,10 @@
         background-position:5% 0
     }
   }
-
-
+  
+  
   /* ================ BEFORE CONTENT STATEMENT ================ */
-
+  
   .h3-statement::before {
     content: open-quote;
     font-family: system-ui;
@@ -53,172 +53,176 @@
     position: absolute;
     left: -1rem;
     top: -1rem;
-}
-
-@media(min-width: 1000px) {
+  }
+  
+  @media(min-width: 1000px) {
     .h3-statement::before {
         font-size: 5rem;
     }
-}
-
-/* ================ CURSOR POINTER EVENTS ================ */
-
-
-.cursor-wrapper {
+  }
+  
+  /* ================ CURSOR POINTER EVENTS ================ */
+  
+  
+  .cursor-wrapper {
     pointer-events: none;
-}
-
-/* ================ CURSOR POINTER EVENTS ================ */
-
-
-.w-button {
+  }
+  
+  /* ================ CURSOR POINTER EVENTS ================ */
+  
+  
+  .w-button {
     cursor: inherit;
-}   
-
-/* ================ DISABLE CURSOR ON IPAD PRO ================ */
-
-
-@media only screen
- and (min-device-width: 1024px)
- and (max-device-width: 1024px)
- and (orientation: portrait)
- and (-webkit-min-device-pixel-ratio: 2) {
-
-body {
+  }   
+  
+  /* ================ DISABLE CURSOR ON IPAD PRO ================ */
+  
+  
+  @media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  body {
    cursor: default;
-}
-
-.cursor-wrapper {
+  }
+  
+  .cursor-wrapper {
    display: none;
-}
-
-a {
+  }
+  
+  a {
    cursor: pointer;
-}
-}
-
-@media only screen
- and (min-device-width: 1366px)
- and (max-device-width: 1366px)
- and (orientation: landscape)
- and (-webkit-min-device-pixel-ratio: 2) {
- 
-body {
+  }
+  }
+  
+  @media only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  body {
    cursor: default;
-}
-
-.cursor-wrapper {
+  }
+  
+  .cursor-wrapper {
    display: none;
-}
-
-a {
+  }
+  
+  a {
    cursor: pointer;
-}
-}
-
-
-
-@media screen and (max-width: 767px) {
+  }
+  }
+  
+  
+  
+  @media screen and (max-width: 767px) {
     .section-insta,
     .section-insta-container {
         overflow: unset;
     }
-
-}
-
-
-/* STYLES FOR NAV MENU */
-
-a {
-	color: inherit;
-}
-
-/* .link-top, .link-bottom {
-	pointer-events: none;
-} */
-
-
-/* Radio for restaurant selection */
-label.radio-field-wrapper:has(.w--redirected-checked) {
+  
+  }
+  
+  
+  /* STYLES FOR NAV MENU */
+  
+  a {
+  color: inherit;
+  }
+  
+  /* .link-top, .link-bottom {
+  pointer-events: none;
+  } */
+  
+  
+  /* Radio for restaurant selection */
+  label.radio-field-wrapper:has(.w--redirected-checked) {
     background: #fff;
     color: #000;
     border: 1px solid #000;
-}
-
-label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checked) {
+  }
+  
+  label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checked) {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
-}
-
-.radio-field-wrapper .w-form-label {
+  }
+  
+  .radio-field-wrapper .w-form-label {
     cursor: none;
-}
-
-
-/* ================ DISABLE CURSOR ON IPAD PRO ================ */
-
-.restaurant-item:nth-of-type(1) .main-cta {
+  }
+  
+  
+  /* ================ DISABLE CURSOR ON IPAD PRO ================ */
+  
+  .restaurant-item:nth-of-type(1) .main-cta {
+    background: var(--wonderwoods-dark-green);
+  }
+  .restaurant-item:nth-of-type(2) .main-cta {
     background: #C56648;
-}
-.restaurant-item:nth-of-type(2) .main-cta {
+  }
+  /* .restaurant-item:nth-of-type(3) .main-cta {
     background: #900521;
-}
-.restaurant-item:nth-of-type(3) .main-cta {
+  } */
+  .restaurant-item:nth-of-type(4) .main-cta {
     background: #537a38;
-}
-
-.restaurant-item:nth-of-type(1) .main-cta:hover, 
-.restaurant-item:nth-of-type(2) .main-cta:hover, 
-.restaurant-item:nth-of-type(3) .main-cta:hover {
+  }
+  
+  .restaurant-item:nth-of-type(1) .main-cta:hover, 
+  .restaurant-item:nth-of-type(2) .main-cta:hover, 
+  /* .restaurant-item:nth-of-type(3) .main-cta:hover,  */
+  .restaurant-item:nth-of-type(4) .main-cta:hover {
     background: #fff;
     color: #000;
-}
-
-/* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
-
-.logo-restaurant-listing-item {
+  }
+  
+  /* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
+  
+  .logo-restaurant-listing-item {
     pointer-events: none;
-}
-
-/* ================ HEIGHT OF RESTAURANT LISTING ================ */
-
-/* .section-restaurant-listing {
+  }
+  
+  /* ================ HEIGHT OF RESTAURANT LISTING ================ */
+  
+  /* .section-restaurant-listing {
     height: calc(100vh - 66px);
-} */
-
-/* ================ DO NOT DISPLAY SEVEN ROOMS LOGO ================ */
-.sr-fa.sr-fa-logo {
+  } */
+  
+  /* ================ DO NOT DISPLAY SEVEN ROOMS LOGO ================ */
+  .sr-fa.sr-fa-logo {
     display: none;
-}
-
-/* ================ EPHEMERA LOGO TO DISPLAY PROPERLY ON NAVBAR MOBILE ================ */
-.lottie-nav-item svg {
+  }
+  
+  /* ================ EPHEMERA LOGO TO DISPLAY PROPERLY ON NAVBAR MOBILE ================ */
+  .lottie-nav-item svg {
     width: auto!important;
-}
-
-/* ================ DVH ================ */
-/* .section-hero,
-.section-hero-restaurant-item-info-container {
+  }
+  
+  /* ================ DVH ================ */
+  /* .section-hero,
+  .section-hero-restaurant-item-info-container {
     height: 100dvh;
-} */
-
-.section-nav-menu {
+  } */
+  
+  .section-nav-menu {
     height: 100dvh;
-}
-
-
-/* ================ Styling list for events ================ */
-
-.event-p ul {
+  }
+  
+  
+  /* ================ Styling list for events ================ */
+  
+  .event-p ul {
     list-style: none;
-}
-.event-p ul li {
+  }
+  .event-p ul li {
     position: relative;
     margin-bottom: .66em;
-}
-
-.event-p ul li::before {
+  }
+  
+  .event-p ul li::before {
         content: '';
         position: absolute;
         left: -2em;
@@ -227,57 +231,57 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
         height: 1em;
         background-repeat: no-repeat;
         background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0 --%3E%3Csvg version='1.1' id='Layer_2_00000049917505561257611940000002343653161651239317_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 614.5 629.7' style='enable-background:new 0 0 614.5 629.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cg id='ephemera-e'%3E%3Cg id='ephemera-e-2'%3E%3Cpath class='st0' d='M613,0.8l0.3-0.8H438l0,0.1C296.7,6.9,32.1,9.9,0.7,184.4C-7.2,244.3,53,305.7,115.7,306 c46.3,7,123.8-40.8,80.4-88.4c-10,46.7-73.6,13.6-56.9-29.7C178.2,91.4,308.6,52,413.6,39.9l-0.5,0.8l1.2-0.8 c0,0,31.4-3.2,41.5-2.2l-7.9,14c0,0-22.8-0.4-45.3,4.2c-73.3,113.7-217.1,294-261.5,419.6c-15.1,74.2,21,156.6,104,154.1 c114.3-1.7,192.4-117.1,233-225.7l-20.2-0.4c-9.4,35.5-101.4,139.8-148.5,82.5c-11.7-13.9-1.7-37.2,7.1-49.9 c12.3-25.7,58.9-126,71.1-149.4h113.2l36.7-95.4h-96.9l54.5-95.8c28.9,0.1,53.1,8.4,41.6,39h27.4L612.8,1.2l1.7-0.5H613z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
-}
-
-
-.video-uts video {
+  }
+  
+  
+  .video-uts video {
     max-height: 100%;
-} 
-
-
-
-/* FORM FOR DATE PICKER NO BACKGROUND */
-.w-input[disabled]:not(.w-input-disabled), .w-select[disabled]:not(.w-input-disabled), .w-input[readonly], .w-select[readonly], fieldset[disabled]:not(.w-input-disabled) .w-input, fieldset[disabled]:not(.w-input-disabled) .w-select {
+  } 
+  
+  
+  
+  /* FORM FOR DATE PICKER NO BACKGROUND */
+  .w-input[disabled]:not(.w-input-disabled), .w-select[disabled]:not(.w-input-disabled), .w-input[readonly], .w-select[readonly], fieldset[disabled]:not(.w-input-disabled) .w-input, fieldset[disabled]:not(.w-input-disabled) .w-select {
     background-color: inherit;
-}
-
-.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
+  }
+  
+  .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
     background: #000!important;
-}
-
-.privatisation-form .w-checkbox::before {
+  }
+  
+  .privatisation-form .w-checkbox::before {
     display: none;
-}
-
-.main-cta:hover .p-cta {
+  }
+  
+  .main-cta:hover .p-cta {
     color: inherit;
-}
-
-.wg-selector-2-fill.f1 {
+  }
+  
+  .wg-selector-2-fill.f1 {
     background-color: #ffd4ca!important;
-}
-
-
-/* DO NOT DISPLAY LOADING SCREEN ON SAFARI*/
-@media not all and (min-resolution:.001dpcm) { @media {
-
+  }
+  
+  
+  /* DO NOT DISPLAY LOADING SCREEN ON SAFARI*/
+  @media not all and (min-resolution:.001dpcm) { @media {
+  
     .loading-lottie-container {
         display: none;
     }
-}}
-
-/* Safari 7.1+ */
-
-_::-webkit-full-page-media, _:future, :root .loading-lottie-container {
-
+  }}
+  
+  /* Safari 7.1+ */
+  
+  _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
+  
     opacity: 0;
     pointer-events: none;
   
   }
-
-
-
-
+  
+  
+  
+  
   .personal-bg-video > video,
   .menu-video-bg > video {
     object-fit: cover;
@@ -293,14 +297,14 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
     left: -100%;
     right: -100%; 
   }
-
-
-
+  
+  
+  
   .light-p.pink-underline {
     position: relative;
     z-index: 1;
   }
-
+  
   .light-p.pink-underline:after {
     position: absolute;
     content: '';
@@ -311,11 +315,79 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
     background: #EEC2D1;
     z-index: -1;
   }
-
+  
   .blog_collection_item {
     
   }
-
+  
   .adl_btn_item_wrap:hover .adl_expo_gradient_overlay {
     opacity: .2;
   }
+  
+  /* MARQUEE ANIMATION FOR THE MODAL PRIVAT */
+  
+  /* MARQUEE ANIMATION */
+    @-webkit-keyframes marquee {
+      0% {
+        -webkit-transform: translateX(0);
+      }
+    100% {
+        -webkit-transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee {
+      0% {
+        -webkit-transform: translateX(0);
+      }
+    100% {
+        -webkit-transform: translateX(-50%);
+    }
+  }
+  
+  .privat_modal_logo_list_wrap {
+    animation: marquee 30s infinite linear;
+    webkit-animation: marquee 30s infinite linear;
+  }
+  
+  
+  .privat_modal_h3_accent::before {
+    content: ""; /* Required to display the pseudo-element */
+    position: absolute; /* Position it absolutely within the container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color: var(--new-blue); /* Rectangle background color */
+    z-index: -1; /* Ensure it sits behind the text */
+    transform: rotate(-1deg);
+    border-radius: .25rem;
+  }
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .christmas_star_svg {
+    animation: rotate360 5s linear infinite; /* Adjust duration for speed */
+  }
+  
+  .iframe-resa {
+    border: none;
+  }
+  
+  
+  /* ================ BTN CLOSE IFRAME RESA ================ */
+  .iframe_resa_close_wrap:hover {
+    transform: scale(1.1);
+  }
+  
+  .iframe_resa_close_wrap {
+    transition: all .1s ease;
+  }
+  
+  
