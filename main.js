@@ -451,46 +451,45 @@ updateCountdown(); // Initial call to avoid delay
 ///////////////////////////////
 
 document.addEventListener("DOMContentLoaded", () => {
-const resaBtns = document.querySelectorAll("[data-resa]");
-const iframeResa = document.querySelector(".iframe_resa_embed iframe");
-const iframeWrap = document.querySelector(".iframe_resa_wrap");
-const iframeLayout = document.querySelector(".iframe_resa_layout");
-const closeBtn = document.querySelector(".iframe_resa_close_wrap");
-const iframeContain = document.querySelector(".iframe_resa_contain");
+  const resaBtns = document.querySelectorAll("[data-resa]");
+  const iframeResa = document.querySelector(".iframe_resa_embed iframe");
+  const iframeWrap = document.querySelector(".iframe_resa_wrap");
+  const iframeLayout = document.querySelector(".iframe_resa_layout");
+  const closeBtn = document.querySelector(".iframe_resa_close_wrap");
+  const iframeContain = document.querySelector(".iframe_resa_contain");
 
-if (resaBtns.length && iframeResa && iframeWrap && iframeLayout && closeBtn && iframeContain) {
-  const tlIframeResa = gsap.timeline({ paused: true });
+  if (resaBtns.length && iframeResa && iframeWrap && iframeLayout && closeBtn && iframeContain) {
+    const tlIframeResa = gsap.timeline({ paused: true });
 
-  tlIframeResa
-    .set(iframeWrap, { display: "block" })
-    .fromTo(iframeWrap, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" })
-    .fromTo(iframeLayout, { y: 500, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, ease: "power2.out" }, "<0.1");
+    tlIframeResa
+      .set(iframeWrap, { display: "block" })
+      .fromTo(iframeWrap, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" })
+      .fromTo(iframeLayout, { x: 700, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, ease: "power2.out" }, "<0.1");
 
-  // Clear iframe src after reverse completes
-  tlIframeResa.eventCallback("onReverseComplete", () => {
-    iframeResa.setAttribute("src", "");
-    iframeWrap.style.display = "none"; // Optionally hide the wrap again
-  });
-
-  resaBtns.forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      const url = btn.getAttribute("data-resa");
-      iframeResa.setAttribute("src", url);
-      tlIframeResa.play();
+    // Clear iframe src after reverse completes
+    tlIframeResa.eventCallback("onReverseComplete", () => {
+      iframeResa.setAttribute("src", "");
+      iframeWrap.style.display = "none"; // Optionally hide the wrap again
     });
-  });
 
-  closeBtn.addEventListener("click", () => {
-    tlIframeResa.reverse();
-  });
+    resaBtns.forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const url = btn.getAttribute("data-resa");
+        iframeResa.setAttribute("src", url);
+        tlIframeResa.play();
+      });
+    });
 
-  // Also close if background (iframe_resa_contain) is clicked
-  iframeContain.addEventListener("click", (e) => {
-    if (e.target === iframeContain) {
+    closeBtn.addEventListener("click", () => {
       tlIframeResa.reverse();
-    }
-  });
-}
-});
+    });
 
+    // Also close if background (iframe_resa_contain) is clicked
+    iframeContain.addEventListener("click", (e) => {
+      if (e.target === iframeContain) {
+        tlIframeResa.reverse();
+      }
+    });
+  }
+});
