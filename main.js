@@ -464,7 +464,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tlIframeResa
       .set(iframeWrap, { display: "block" })
       .fromTo(iframeWrap, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" })
-      .fromTo(iframeLayout, { x: 700, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, ease: "power2.out" }, "<0.1");
+      .fromTo(iframeLayout, { y: 500, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2, ease: "power2.out" }, "<0.1");
 
     // Clear iframe src after reverse completes
     tlIframeResa.eventCallback("onReverseComplete", () => {
