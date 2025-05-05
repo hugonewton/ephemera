@@ -390,4 +390,11 @@
     transition: all .1s ease;
   }
   
-  
+  /* ================ NAV MENUANIMATIONS ================ */
+
+  .fill.expand {
+    height: 100%;
+  }
+  .fill.expand .marquee {
+    opacity: 1;
+  }
