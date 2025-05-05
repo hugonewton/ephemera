@@ -74,54 +74,6 @@ if (calculateBtn) { // Check if "btn-calculate" exists
 
 
 
-// // ——————————————————————————————————————————————————
-// // POP-UP PRIVAT
-// // ——————————————————————————————————————————————————
-
-// let tlModalPrivat = gsap.timeline({ paused: true });
-// tlModalPrivat
-//     .to(".privat_modal_wrap", { display: "block" })  // Ensure display is set before animation
-//     .from(".privat_modal_bg", {
-//         opacity: 0,
-//         duration: .6,
-//     })
-//     .from(".privat_modal_layout", {
-//         y: "100vh",
-//     });
-
-// // Wait for the DOM to be fully loaded
-// document.addEventListener('DOMContentLoaded', function () {
-//     const modalShownKey = 'modalHasBeenShown';
-//     const modalDelay = 10000; // 10,000 milliseconds = 10 seconds
-
-//     // Check if the modal has already been shown
-//     if (!localStorage.getItem(modalShownKey)) {
-//         setTimeout(function() {
-//             showModalPrivat();
-//             localStorage.setItem(modalShownKey, 'true');
-//         }, modalDelay);
-//     }
-// });
-
-// function showModalPrivat() {    
-//     tlModalPrivat.play();
-// }
-
-// // showModalPrivat();
-
-// // Optional: Add a close event to hide the modal with GSAP animation
-// const closeModalButton = document.querySelector('.privat_modal_close');
-
-// function closeModal() {
-//     tlModalPrivat.reverse();
-// }
-
-// // Check if the close button exists and add the event listener
-// if (closeModalButton) {
-//     closeModalButton.addEventListener('click', closeModal);
-// }
-
-
 
 
 function initializeModal({
@@ -388,62 +340,62 @@ el.addEventListener("mouseleave", function () {
 ///////////////////////////////
 
 
-document.addEventListener("DOMContentLoaded", function () {
-// Set the target date (March 16th at 23:59)
-const targetDate = new Date(new Date().getFullYear(), 2, 16, 23, 59, 0); // March is month 2 (0-based index)
+// document.addEventListener("DOMContentLoaded", function () {
+// // Set the target date (March 16th at 23:59)
+// const targetDate = new Date(new Date().getFullYear(), 2, 16, 23, 59, 0); // March is month 2 (0-based index)
 
-function updateCountdown() {
-    const now = new Date();
-    let timeRemaining = targetDate - now;
+// function updateCountdown() {
+//     const now = new Date();
+//     let timeRemaining = targetDate - now;
 
-    if (timeRemaining < 0) {
-        timeRemaining = 0;
-    }
+//     if (timeRemaining < 0) {
+//         timeRemaining = 0;
+//     }
 
-    // Calculate remaining time in days, hours, minutes, and seconds
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+//     // Calculate remaining time in days, hours, minutes, and seconds
+//     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+//     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+//     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    // Find all counter items and update accordingly
-    document.querySelectorAll(".counter_item_wrap").forEach((item) => {
-        const timeCategory = item.getAttribute("data-time-category");
-        const figure = item.querySelector(".counter_figure");
-        const text = item.querySelector(".counter_text");
+//     // Find all counter items and update accordingly
+//     document.querySelectorAll(".counter_item_wrap").forEach((item) => {
+//         const timeCategory = item.getAttribute("data-time-category");
+//         const figure = item.querySelector(".counter_figure");
+//         const text = item.querySelector(".counter_text");
 
-        if (!figure || !text) return;
+//         if (!figure || !text) return;
 
-        switch (timeCategory) {
-            case "day":
-                figure.textContent = days;
-                text.textContent = days > 1 ? "Jours" : "Jour";
-                break;
-            case "hour":
-                figure.textContent = hours;
-                text.textContent = hours > 1 ? "Heures" : "Heure";
-                break;
-            case "minute":
-                figure.textContent = minutes;
-                text.textContent = minutes > 1 ? "Minutes" : "Minute";
-                break;
-            case "second":
-                figure.textContent = seconds;
-                text.textContent = seconds > 1 ? "Secondes" : "Seconde";
-                break;
-        }
-    });
+//         switch (timeCategory) {
+//             case "day":
+//                 figure.textContent = days;
+//                 text.textContent = days > 1 ? "Jours" : "Jour";
+//                 break;
+//             case "hour":
+//                 figure.textContent = hours;
+//                 text.textContent = hours > 1 ? "Heures" : "Heure";
+//                 break;
+//             case "minute":
+//                 figure.textContent = minutes;
+//                 text.textContent = minutes > 1 ? "Minutes" : "Minute";
+//                 break;
+//             case "second":
+//                 figure.textContent = seconds;
+//                 text.textContent = seconds > 1 ? "Secondes" : "Seconde";
+//                 break;
+//         }
+//     });
 
-    // Stop countdown when reaching zero
-    if (timeRemaining <= 0) {
-        clearInterval(interval);
-    }
-}
+//     // Stop countdown when reaching zero
+//     if (timeRemaining <= 0) {
+//         clearInterval(interval);
+//     }
+// }
 
-// Update countdown every second
-const interval = setInterval(updateCountdown, 1000);
-updateCountdown(); // Initial call to avoid delay
-});
+// // Update countdown every second
+// const interval = setInterval(updateCountdown, 1000);
+// updateCountdown(); // Initial call to avoid delay
+// });
 
 
 ///////////////////////////////
