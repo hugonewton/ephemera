@@ -380,6 +380,10 @@
     animation: rotate360 5s linear infinite; /* Adjust duration for speed */
   }
   
+  .ephemera_svg_wrap svg {
+    animation: rotate360 5s linear infinite; /* Adjust duration for speed */
+  }
+  
   .iframe-resa {
     border: none;
   }
