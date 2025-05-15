@@ -142,11 +142,12 @@ function initializeModal({
 //   delay: 10000, // Delay in ms
 //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 // });
+
 initializeModal({
   modalWrap: ".magmatic_modal_wrap",
   modalBackground: ".magmatic_modal_background",
   modalLayout: ".magmatic_modal_layout",
-  closeButton: ".privat_modal_close",
+  closeButton: ".privat_modal_close[data-action='close-magmatic']",
   delay: 10000, // Delay in ms
   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 });
