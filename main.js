@@ -134,14 +134,23 @@ function initializeModal({
 }
 
 // Usage example
+// initializeModal({
+//   modalWrap: ".privat_modal_wrap",
+//   modalBackground: ".privat_modal_bg",
+//   modalLayout: ".privat_modal_layout",
+//   closeButton: ".privat_modal_close",
+//   delay: 10000, // Delay in ms
+//   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+// });
 initializeModal({
-  modalWrap: ".privat_modal_wrap",
-  modalBackground: ".privat_modal_bg",
-  modalLayout: ".privat_modal_layout",
+  modalWrap: ".magmatic_modal_wrap",
+  modalBackground: ".magmatic_modal_background",
+  modalLayout: ".magmatic_modal_layout",
   closeButton: ".privat_modal_close",
   delay: 10000, // Delay in ms
   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 });
+
 // Usage example
 // initializeModal({
 //   modalWrap: ".uts_closing_modal_wrap",
