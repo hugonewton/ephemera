@@ -143,11 +143,20 @@ function initializeModal({
 //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 // });
 
+// initializeModal({
+//   modalWrap: ".magmatic_modal_wrap",
+//   modalBackground: ".magmatic_modal_background",
+//   modalLayout: ".magmatic_modal_layout",
+//   closeButton: ".modal_close_btn[data-action='close-magmatic']",
+//   delay: 10000, // Delay in ms
+//   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+// });
+
 initializeModal({
-  modalWrap: ".magmatic_modal_wrap",
-  modalBackground: ".magmatic_modal_background",
-  modalLayout: ".magmatic_modal_layout",
-  closeButton: ".modal_close_btn[data-action='close-magmatic']",
+  modalWrap: ".restaurant_modal_wrap.wonderwoods-vde",
+  modalBackground: ".restaurant_modal_background.wonderwoods-vde",
+  modalLayout: ".restaurant_modal_layout.wonderwoods",
+  closeButton: ".modal_close_btn[data-action='close-wonderwoods-vde']",
   delay: 10000, // Delay in ms
   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 });
