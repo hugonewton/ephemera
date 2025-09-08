@@ -406,3 +406,9 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
 .fill.expand .marquee {
   opacity: 1;
 }
+
+/* ================ WEGLOT DEFAULT ================ */
+
+.wg-default {
+  display: none;
+}
