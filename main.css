@@ -409,6 +409,6 @@ _::-webkit-full-page-media, _:future, :root .loading-lottie-container {
 
 /* ================ WEGLOT DEFAULT ================ */
 
-.wg-default {
+.wg-default.weglot-container {
   display: none;
 }
