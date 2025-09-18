@@ -183,6 +183,23 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
   color: #000;
 }
 
+
+.restaurant-item .main-cta[data-restaurant="uts"] {
+  background: var(--stellar-accent);
+}
+
+.restaurant-item .main-cta[data-restaurant="magmatic"] {
+  background: #EE7326;
+}
+
+.restaurant-item .main-cta[data-restaurant="stellar"] {
+  background: #604696;
+}
+
+.restaurant-item .main-cta[data-restaurant="wonderwoods"] {
+  background: var(--wonderwoods-dark-green);
+}
+
 /* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
 
 .logo-restaurant-listing-item {
