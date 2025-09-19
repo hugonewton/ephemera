@@ -189,7 +189,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 }
 
 .restaurant-item .main-cta[data-restaurant="magmatic"] {
-  background: #EE7326;
+  background: var(--magmatic-lave);
 }
 
 .restaurant-item .main-cta[data-restaurant="stellar"] {
@@ -198,6 +198,10 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 
 .restaurant-item .main-cta[data-restaurant="wonderwoods"] {
   background: var(--wonderwoods-dark-green);
+}
+
+.restaurant-item .main-cta[data-restaurant="jungle-palace"] {
+  background: #EE7326;
 }
 
 /* ================ DISABLE POINTER EVENT ON LOGO RESTAURANT LISTING ================ */
