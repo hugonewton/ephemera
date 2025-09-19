@@ -152,34 +152,46 @@ function initializeModal({
 //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 // });
 
-initializeModal({
-  modalWrap: ".restaurant_modal_wrap.wonderwoods-vde",
-  modalBackground: ".restaurant_modal_background.wonderwoods-vde",
-  modalLayout: ".restaurant_modal_layout.wonderwoods",
-  closeButton: ".modal_close_btn[data-action='close-wonderwoods-vde']",
-  delay: 10000, // Delay in ms
-  animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
-});
-
-// Usage example
 // initializeModal({
-//   modalWrap: ".uts_closing_modal_wrap",
-//   modalBackground: ".uts_closing_modal_bg",
-//   modalLayout: ".uts_closing_modal_layout",
-//   closeButton: ".modal_close.is_uts",
-//   delay: 5000, // Delay in ms
-//   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
-// });
-
-// Usage example
-// initializeModal({
-//   modalWrap: ".wonderwoods_modal_wrap",
-//   modalBackground: ".wonderwoods_modal_bg",
-//   modalLayout: ".wonderwoods_modal_layout",
-//   closeButton: ".wonderwoods_modal_close",
+//   modalWrap: ".restaurant_modal_wrap.wonderwoods-vde",
+//   modalBackground: ".restaurant_modal_background.wonderwoods-vde",
+//   modalLayout: ".restaurant_modal_layout.wonderwoods",
+//   closeButton: ".modal_close_btn[data-action='close-wonderwoods-vde']",
 //   delay: 10000, // Delay in ms
 //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
 // });
+
+
+// Usage example
+// initializeModal({
+  //   modalWrap: ".uts_closing_modal_wrap",
+  //   modalBackground: ".uts_closing_modal_bg",
+  //   modalLayout: ".uts_closing_modal_layout",
+  //   closeButton: ".modal_close.is_uts",
+  //   delay: 5000, // Delay in ms
+  //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+  // });
+  
+  // Usage example
+  // initializeModal({
+    //   modalWrap: ".wonderwoods_modal_wrap",
+    //   modalBackground: ".wonderwoods_modal_bg",
+    //   modalLayout: ".wonderwoods_modal_layout",
+    //   closeButton: ".wonderwoods_modal_close",
+    //   delay: 10000, // Delay in ms
+    //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+    // });
+
+
+
+    // initializeModal({
+    //   modalWrap: ".restaurant_modal_wrap.uts",
+    //   modalBackground: ".restaurant_modal_background.uts",
+    //   modalLayout: ".restaurant_modal_layout.uts",
+    //   closeButton: ".modal_close_btn[data-action='close-uts']",
+    //   delay: 10000, // Delay in ms
+    //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+    // });
 
 console.log("bonjour");
 
