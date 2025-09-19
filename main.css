@@ -185,7 +185,7 @@ label.radio-field-wrapper.bounce-back.cursor-hover.blk:has(.w--redirected-checke
 
 
 .restaurant-item .main-cta[data-restaurant="uts"] {
-  background: var(--stellar-accent);
+  background: var(--uts-accent);
 }
 
 .restaurant-item .main-cta[data-restaurant="magmatic"] {
