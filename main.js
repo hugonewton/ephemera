@@ -184,14 +184,14 @@ function initializeModal({
 
 
 
-    // initializeModal({
-    //   modalWrap: ".restaurant_modal_wrap.uts",
-    //   modalBackground: ".restaurant_modal_background.uts",
-    //   modalLayout: ".restaurant_modal_layout.uts",
-    //   closeButton: ".modal_close_btn[data-action='close-uts']",
-    //   delay: 10000, // Delay in ms
-    //   animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
-    // });
+    initializeModal({
+      modalWrap: ".restaurant_modal_wrap.uts",
+      modalBackground: ".restaurant_modal_background.uts",
+      modalLayout: ".restaurant_modal_layout.uts",
+      closeButton: ".modal_close_btn[data-action='close-uts']",
+      delay: 10000, // Delay in ms
+      animationConfig: { opacity: 0, duration: 0.6, y: "100vh" }
+    });
 
 console.log("bonjour");
 
