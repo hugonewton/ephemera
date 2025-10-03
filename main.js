@@ -483,9 +483,10 @@ document.addEventListener("DOMContentLoaded", () => {
 ///////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".accesibilite_menu_immersif_collection_list_wrapper");
+  const items = document.querySelectorAll(".accesibilite_menu_immersif_collection_item");
+  const hasNon = Array.from(items).some(item => item.getAttribute("data-dispo") === "non");
 
-  if (wrapper && wrapper.querySelector(".w-dyn-empty")) {
+  if (hasNon) {
     const destinations = document.querySelectorAll("[data-destination-menu]");
     destinations.forEach(el => {
       el.style.display = "none";
