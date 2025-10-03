@@ -483,9 +483,9 @@ document.addEventListener("DOMContentLoaded", () => {
 ///////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {
-  const menu = document.querySelector(".accesibilite_menu_immersif");
+  const wrapper = document.querySelector(".accesibilite_menu_immersif_collection_list_wrapper");
 
-  if (menu && menu.getAttribute("data-switch-menu") === "non") {
+  if (wrapper && wrapper.querySelector(".w-dyn-empty")) {
     const destinations = document.querySelectorAll("[data-destination-menu]");
     destinations.forEach(el => {
       el.style.display = "none";
