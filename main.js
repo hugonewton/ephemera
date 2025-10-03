@@ -476,3 +476,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+///////////////////////////////
+/// MENU IMMERSIF
+///////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".accesibilite_menu_immersif");
+
+  if (menu && menu.getAttribute("data-switch-menu") === "non") {
+    const destinations = document.querySelectorAll("[data-destination-menu]");
+    destinations.forEach(el => {
+      el.style.display = "none";
+    });
+  }
+});
